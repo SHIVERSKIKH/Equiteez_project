@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.ico" sizes="16x16">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Equiteez | Home pages</title>
@@ -141,7 +142,7 @@
                    <h1 class="promo-info__title">Private Equity Made Easy</h1>
                    <div class="promo-image-mobile"></div>
                    <p class="promo-info_txt">Equiteez is&nbsp;on&nbsp;a&nbsp;mission to&nbsp;make private equity easily accesible to&nbsp;all in&nbsp;vestors</p>
-                   <a href="#" class="promo-btn">Singnup For Free</a>
+                   <button href="#" class="promo-btn btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Singnup For Free</button>
                </div>
                <div class="promo-image"></div>
               </div>
@@ -177,7 +178,7 @@
             </div>
             <form action="#" class="form">
                 <input class="input-email" type="email" placeholder="E-mail*">
-                <button class="form__btn">Get Early Access</button>
+                <button class="form__btn btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Get Early Access</button>
             </form>
           </div>
         </section>
@@ -265,7 +266,7 @@
                                <p class="blog-info__txt">In&nbsp;expression an&nbsp;solicitude principles in&nbsp;do. Small for ask shade water manor think men begin. At&nbsp;principle perfectly by&nbsp;sweetness&nbsp;do.</p>
                         </article>
                     </div>
-                    <a href="#" class="blog-btn">View all news</a>
+                    <button href="#" class="blog-btn btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">View all news</button>
                 </div>
             </section>
             <section class="contact" id="contact">
@@ -288,7 +289,7 @@
                         <div class="contact-form-info">
                             <p>Message*</p><textarea cols="30" rows="10" class="textarea"></textarea>
                         </div>
-                        <button type="submit" class="contact__btn">Send</button>
+                        <button type="submit" class="contact__btn btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Send</button>
                     </form>
                 </div>
             </section>
@@ -371,6 +372,48 @@
                 <div class="rights">&copy;2020 Equiteez.All rights reserved.</div>
             </div>
         </footer>
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Singnup For Free</h1>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="modal-contact-form">
+                        <div class="modal-contact-form-info">
+                            <p>Name</p><input type="text" class="modal-contact__input">
+                        </div>
+                        <div class="modal-contact-form-info">
+                            <p>Company</p><input type="text" class="modal-contact__input">
+                        </div>
+                        <div class="modal-contact-form-info">
+                            <p>E-mail*</p><input type="email" class="modal-contact__input">
+                        </div>
+                        <div class="modal-contact-form-info">
+                            <p>Message*</p><textarea cols="30" rows="10" class="modal-textarea"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary contact__btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content send">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body modal-txt">
+                    Successfully! We will send early access soon.
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
