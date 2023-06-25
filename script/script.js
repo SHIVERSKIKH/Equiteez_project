@@ -6,6 +6,9 @@ mobileMenu.addEventListener('click', toggleMenu);
 function toggleMenu() {
     document.body.classList.toggle('stop-scrolling');
     blockMenu.classList.toggle('visit');
-  }
+  };
+ 
+
+
     
   
