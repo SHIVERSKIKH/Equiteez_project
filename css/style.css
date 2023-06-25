@@ -459,6 +459,7 @@ ul {
 .blog-btn:active {
     background:#FFF!important;
     color: #2ECC71!important;
+    border: 5px solid #2DC66E!important;
 }
 .contact {
     background:#f7f7f7;
@@ -551,12 +552,14 @@ ul {
     align-items: center;
     align-self: flex-end;
     margin: 0 0 44px 0;
+    border:none!important;
 }
 .contact__btn:hover {
     font-weight: 600;
     cursor: pointer;
     color: #000;
     background: #f7f7f7;
+    border: 1px solid black!important;
 }
 .contact__btn:active {
     color: #fff!important;
@@ -640,11 +643,19 @@ ul {
 .footer__link a:active {
     color: #fff;
 }
+.modal-body {
+    padding: 58px 20px 17px 21px;
+}
+.modal-dialog {
+    max-width: 580px;
+    width: 100%;
+}
 .modal-content {
     max-width: 580px;
     min-height: 502px;
     border-radius: 10px;
     background: #FFF;
+    justify-content: center;
 }
 .modal-title {
     color: #010101;
@@ -658,6 +669,7 @@ ul {
 }
 .modal-contact-form-info {
     display: flex;
+    justify-content: flex-end;
 }
 .modal-contact-form {
     display: flex;
@@ -716,6 +728,10 @@ ul {
 }
 .btn-primary:hover {
     --bs-btn-hover-border-color: none;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 @media (max-width:1366px) {
     .center {
@@ -788,6 +804,9 @@ ul {
     }
     .nav-block__list {
         flex-wrap: wrap;
+    }
+    .promo-image {
+        background-size: contain;
     }
     .contact__input {
         max-width: 504px;
@@ -894,10 +913,12 @@ ul {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        overflow: hidden;
       }
       #menu-switch:checked ~ .page-header-banner {
         border: 8px solid red;
+      }
+      .visit {
+        overflow: hidden;
       }
       .menu-mobile-list {
         display: none;
@@ -912,7 +933,17 @@ ul {
         top:94px;
         z-index: 20;
         padding: 26px  20px ;
+        animation: slideDown 0.3s;
       }
+      /* .menu-mobile-list::before {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -100%;
+        left: 0;
+      } */
       .menu-mobile-list a {
         color: #000;
         font-size: 18px;
@@ -1220,3 +1251,12 @@ ul {
         margin: 0 0 55px 0;
     }
 }
+@keyframes slideDown {
+    0% {
+      top: -1000px;
+    }
+    100% {
+      top: 90px;
+    }
+  }
+  
