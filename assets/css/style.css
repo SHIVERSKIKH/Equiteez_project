@@ -1240,6 +1240,7 @@ ul {
     .contact__btn {
         margin: 0 0 55px 0;
     }
+}
 @keyframes slideDown {
     0% {
       top: -1000px;
@@ -1247,5 +1248,4 @@ ul {
     100% {
       top: 90px;
     }
-  }
-  
+}
