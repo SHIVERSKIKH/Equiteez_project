@@ -8,7 +8,3 @@ function toggleMenu() {
     blockMenu.classList.toggle('visit');
   };
  
-
-
-    
-  
